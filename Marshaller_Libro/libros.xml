@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libros>
+	<libro>
+		<id>125</id>
+		<titulo>Java</titulo>
+		<autor>Microsoft</autor>
+		<anyo>1999</anyo>
+		<editor>Windows</editor>
+		<paginas>259</paginas>
+	</libro>
+</libros>
