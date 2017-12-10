@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeElementosID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/elNombreAlumno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/elNombre"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/elEdadAlumno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/elNombreAlumno"
+                android:text="@string/elEdad"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/elCicloAlumno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/elEdadAlumno"
+                android:text="@string/elCicloAlumno"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/elCursoAlumno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/elCicloAlumno"
+                android:text="@string/elCursoAlumno"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/elMediaAlumno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/elCursoAlumno"
+                android:text="@string/elMedia"
+                android:textSize="18sp" />
+
+            <TableRow
+                android:id="@+id/elAlumnoTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/elMediaAlumno"
+                android:layout_alignParentEnd="true">
+
+                <Button
+                    android:id="@+id/deleteButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@android:drawable/ic_delete" />
+
+            </TableRow>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

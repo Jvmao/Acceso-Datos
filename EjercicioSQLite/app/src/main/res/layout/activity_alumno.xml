@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollAlumno"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context="com.josevicente.ejerciciosqlite.ActivityAlumno">
+
+    <LinearLayout
+        android:id="@+id/linearAlumno"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/idAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:ems="10"
+            android:hint="@string/idAlumno"
+            android:inputType="textPersonName"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nombreAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/nombreAlumno"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edadAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/edadAlumno"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/cicloAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/cicloAlumno"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/cursoAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/cursoAlumno"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/notaAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/notaAlumno"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnGuardarAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/rounded_cornerbtn"
+            android:padding="5dp"
+            android:text="@string/btnSaveAlumno"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TableRow
+            android:id="@+id/table1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnNombreAlumno"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/porNombre"
+                android:tooltipText="@string/toolNombre" />
+
+            <Button
+                android:id="@+id/btnEdadAlumno"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/porEdad"
+                android:tooltipText="@string/toolEdad" />
+
+            <Button
+                android:id="@+id/btnccAlumno"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/btnccAlumno" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCicloAlumno"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/porCiclo"
+                android:tooltipText="Por Ciclo" />
+
+            <Button
+                android:id="@+id/btnCursoAlumno"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/porCurso"
+                android:tooltipText="Por Curso" />
+
+            <Button
+                android:id="@+id/btnMediaAlumno"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/porMedia"
+                android:tooltipText="Por Media" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/table3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnListarAlumno"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/btnListar"
+                android:tooltipText="Listar" />
+
+            <Button
+                android:id="@+id/btnEliminarAlumno"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/btnEliminar"
+                android:tooltipText="Eliminar" />
+
+            <Button
+                android:id="@+id/btnLimpiarAlumno"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/btnLimpiar"
+                android:tooltipText="Limpiar" />
+
+
+        </TableRow>
+
+        <ListView
+            android:id="@+id/listViewAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/holo_red_dark"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+</ScrollView>

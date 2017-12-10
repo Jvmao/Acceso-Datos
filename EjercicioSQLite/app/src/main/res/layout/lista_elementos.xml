@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearAlumnos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/listTituloAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFF00"
+            android:gravity="center"
+            android:text="@string/listTituloAlumno"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:id="@+id/listNombreAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listNombreAlumno" />
+
+        <TextView
+            android:id="@+id/listEdadAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listEdadAlumno" />
+
+        <TextView
+            android:id="@+id/listCicloAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listCicloAlumno" />
+
+        <TextView
+            android:id="@+id/listCursoAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listCursoAlumno" />
+
+        <TextView
+            android:id="@+id/listNota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listNota" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearProfesor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearAlumnos"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/listTituloProfesor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#01DFD7"
+            android:gravity="center"
+            android:text="@string/listTituloProfesor"
+            android:textColor="@android:color/background_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/listNombreProfesor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listNombreProfesor" />
+
+        <TextView
+            android:id="@+id/listEdadProfesor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listEdadProfesor" />
+
+        <TextView
+            android:id="@+id/listCicloProfesor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listCicloProfesor" />
+
+        <TextView
+            android:id="@+id/listCursoProfesor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listCursoProfesor" />
+
+        <TextView
+            android:id="@+id/listDespacho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listDespacho" />
+    </LinearLayout>
+</RelativeLayout>

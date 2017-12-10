@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/blueeffecthd"
+    tools:context="com.josevicente.ejerciciosqlite.MainActivity">
+
+    <Button
+        android:id="@+id/btnAlumno"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="@string/btnAlumno"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnProfesor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAlumno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="@string/btnProfesor"
+        android:textSize="18sp" />
+
+    <Button
+
+        android:id="@+id/btnListadoAll"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnProfesor"
+        android:layout_below="@+id/btnProfesor"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@android:color/holo_purple"
+        android:text="@string/btnListadoAll"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/borradoCompleto"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnListadoAll"
+        android:layout_below="@+id/btnProfesor"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="@string/borradoDB"
+        android:textSize="18sp" />
+
+</RelativeLayout>
