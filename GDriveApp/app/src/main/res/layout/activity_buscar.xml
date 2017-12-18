@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeBuscar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FE2E2E"
+    tools:context="com.josevicente.gdriveapp.BuscarFicheros.BuscarActivity">
+
+    <EditText
+        android:id="@+id/buscarText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/buscarText"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buscarText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/btnSearch"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listFilesID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSearch"
+        android:scrollbars="vertical" />
+</RelativeLayout>

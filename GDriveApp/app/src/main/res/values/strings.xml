@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GDriveApp</string>
+    <string name="btnConectar">Conectarse</string>
+    <string name="btnCrear">Crear Fichero</string>
+    <string name="btnListar">Listar Ficheros</string>
+    <string name="btnBuscar">Buscar Ficheros</string>
+    <string name="fileName">Escribe el Nombre del Fichero</string>
+    <string name="btnFile">Añadir Fichero</string>
+    <string name="buscarText">Fichero a Buscar</string>
+    <string name="btnSearch">BUSCAR</string>
+    <string name="btnListarElementos">Listar Elementos</string>
+    <string name="driveImage">Google Drive Icon</string>
+</resources>
