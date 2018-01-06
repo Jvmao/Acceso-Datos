@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeGProducto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFF00">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardGestProductoID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:id="@+id/linearGestProducto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagenProducto"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/imagenProducto"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+            <TextView
+                android:id="@+id/nomGProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nomGProducto"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/descGProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/descGProducto"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/catGProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/catGProducto"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/precioGProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/precioGProducto"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="18sp" />
+
+            <TableRow
+                android:id="@+id/tableGProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/relativeItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/imageUpdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:background="@android:drawable/screen_background_light_transparent"
+                        android:contentDescription="@string/imageUpdate"
+                        app:srcCompat="@drawable/update2x32" />
+
+                    <ImageButton
+                        android:id="@+id/imageDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="end"
+                        android:background="@android:drawable/screen_background_light_transparent"
+                        android:contentDescription="@string/imageDelete"
+                        app:srcCompat="@drawable/delete2x32" />
+
+                </RelativeLayout>
+            </TableRow>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

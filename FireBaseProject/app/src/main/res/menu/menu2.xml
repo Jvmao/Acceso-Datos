@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_start"
+        android:title="@string/actionInicio"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sigin"
+        android:title="@string/actionLogin"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionAgregar"
+        android:title="@string/actionUser"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/actionListar"
+        android:title="@string/actionListar" />
+    <item
+        android:id="@+id/actionMod"
+        android:title="@string/actionMod" />
+</menu>

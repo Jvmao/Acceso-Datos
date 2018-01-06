@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/groupOption3">
+        <item
+            android:id="@+id/salirAdd"
+            android:title="@string/salirAdd"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/addItem"
+            android:title="@string/addUserItem"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/verElementos"
+            android:title="@string/verElementos"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/gestElementos"
+            android:menuCategory="system"
+            android:title="@string/gestElementos"
+            app:showAsAction="never" />
+
+    </group>
+
+
+</menu>
