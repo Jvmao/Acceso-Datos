@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16-ene-2018 16:28:23 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="modelo.Pedido" table="PEDIDO">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="fecha" type="java.util.Date">
+            <column name="FECHA" />
+        </property>
+        
+        <!-- Añadimos la Lista Item dentro del Objeto Pedido -->
+        <list name="item" table="PEDIDO_ITEM">
+        	<key column="ID"/>
+        	<list-index column="PUESTO"></list-index>
+        	<composite-element class="modelo.Item">
+        		<property name="nombre" type="string" column="NOMBRE"/>
+        		<property name="cantidad" type="int" column="CANTIDAD"/>
+        	</composite-element> 
+        </list>
+    </class>
+</hibernate-mapping>
