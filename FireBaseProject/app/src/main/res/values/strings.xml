@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">FireBaseProject</string>
-    <string name="btnCrearUsuario">Nuevo Usuario</string>
+    <string name="btnCrearUsuario">NUEVO USUARIO</string>
     <string name="btnConsultarUsuario">Consultar Usuarios</string>
     <string name="btnModificarUsuario">Modificar Usuario</string>
     <string name="tituloUser">NUEVO USUARIO</string>
@@ -18,7 +18,7 @@
     <string name="btnDelete">Eliminar Usuario</string>
     <string name="imageFirebase">Firebase Logo</string>
     <string name="editPass">Password</string>
-    <string name="btnLogin">Login</string>
+    <string name="btnLogin">LOGIN</string>
     <string name="TitleLogin">LOGIN USUARIO</string>
     <string name="mailLogin">E-mail</string>
     <string name="loginPass">Password</string>
@@ -38,7 +38,7 @@
     <string name="addUserItem">Agregar Producto</string>
     <string name="verElementos">Ver Productos</string>
     <string name="gestElementos">Gestión Productos</string>
-    <string name="btnProducto">Articulos</string>
+    <string name="btnProducto">ARTICULOS</string>
     <string name="nomProducto">Nombre Producto</string>
     <string name="descProducto">Descripción</string>
     <string name="catProducto">Categoría</string>
@@ -73,6 +73,9 @@
     <string name="addFoto">Hacer Foto</string>
     <string name="imageTakePic">Hacer Foto</string>
     <string name="imagenProducto">Imagen del Producto</string>
+    <string name="btnAddFriend">AÑADIR AMIGO</string>
+    <string name="btnAddAmigo">AGREGAR</string>
+    <string name="usuarios">USUARIOS</string>
 
     <string-array name="spinnerItems">
         <item>Tecnología</item>

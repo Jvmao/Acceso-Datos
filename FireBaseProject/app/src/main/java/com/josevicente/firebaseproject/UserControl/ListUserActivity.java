@@ -61,10 +61,8 @@ public class ListUserActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                //Método por definir
             }
         });
-
     }
 
     //Añadimos el menu creado en menu2.xml

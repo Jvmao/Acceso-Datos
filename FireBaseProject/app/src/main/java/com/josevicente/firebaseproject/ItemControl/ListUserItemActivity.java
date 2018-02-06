@@ -1,15 +1,18 @@
 package com.josevicente.firebaseproject.ItemControl;
 
 import android.content.Intent;
+import android.os.PersistableBundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -18,11 +21,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FileDownloadTask;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 import com.josevicente.firebaseproject.Main.MainActivity;
 import com.josevicente.firebaseproject.Modelo.Producto;
 import com.josevicente.firebaseproject.R;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ListUserItemActivity extends AppCompatActivity {
     //Definimos las Variables
@@ -34,6 +41,7 @@ public class ListUserItemActivity extends AppCompatActivity {
     public static final String userItem = "Productos";
     FirebaseUser mUser;
     FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +62,8 @@ public class ListUserItemActivity extends AppCompatActivity {
     //Definimos el Método para listar los productos de cada usuario
     public void listUserItem(){
         mUser = mAuth.getCurrentUser();
-        Query itemUserQuery = databaseReference.orderByChild(userItem);
+        String id = mUser.getUid();
+        Query itemUserQuery = databaseReference.orderByChild("userid").equalTo(id);
         itemUserQuery.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -121,4 +130,5 @@ public class ListUserItemActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 }

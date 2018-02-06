@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sky2"
+    android:background="@drawable/sky1hdjpg"
     tools:context="com.josevicente.firebaseproject.ItemControl.ListUserItemActivity">
 
     <ListView
         android:id="@+id/listUserItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="@android:color/holo_red_dark"
-        android:dividerHeight="1dp"
+        android:divider="@android:color/holo_orange_dark"
+        android:dividerHeight="@dimen/cardview_default_radius"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
         android:scrollbars="vertical" />
 </RelativeLayout>

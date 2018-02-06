@@ -12,9 +12,9 @@ import android.widget.Toast;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.josevicente.firebaseproject.ItemControl.AddItemActivity;
+import com.josevicente.firebaseproject.ItemControl.AddNewFriendActivity;
 import com.josevicente.firebaseproject.ItemControl.GestItemActivity;
 import com.josevicente.firebaseproject.ItemControl.ListUserItemActivity;
-import com.josevicente.firebaseproject.ListAllItems.ProductosActivity;
 import com.josevicente.firebaseproject.Main.MainActivity;
 import com.josevicente.firebaseproject.R;
 
@@ -25,6 +25,8 @@ public class UserInActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseUser mUser;
 
+    private Button btnAddFriend;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +36,8 @@ public class UserInActivity extends AppCompatActivity {
         btnListIn = findViewById(R.id.btnListIn);
         btnGestion = findViewById(R.id.btnGestion);
         mAuth = FirebaseAuth.getInstance();
+
+        btnAddFriend = findViewById(R.id.btnAddFriend);
 
         //Añadimos el Listener del Botón btnAddIn para pasar a la Activity AddItemActivity
         btnAddIn.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +66,15 @@ public class UserInActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intentGestItem = new Intent(UserInActivity.this, GestItemActivity.class);
                 startActivity(intentGestItem);
+            }
+        });
+
+        //Añadimos el Listener para pasar a la Activity Amigo
+        btnAddFriend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentSug = new Intent(UserInActivity.this, AddNewFriendActivity.class);
+                startActivity(intentSug);
             }
         });
 

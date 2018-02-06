@@ -135,7 +135,8 @@ public class UserActivity extends AppCompatActivity {
                                         public void onComplete(@NonNull Task<AuthResult> task) {
                                             if(task.isSuccessful()) {
                                                 mUser = mAuth.getCurrentUser();
-                                                String id = databaseReference.push().getKey();
+                                                //String id = databaseReference.push().getKey();
+                                                String id = mUser.getUid();
 
                                                 //Declaramos un nuevo objeto User
                                                 User user = new User(id, userName, mail, pass, name, apellidos, dir);

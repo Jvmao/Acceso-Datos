@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/blue1"
+    android:background="@drawable/blue2"
     tools:context="com.josevicente.firebaseproject.UserControl.ListUserActivity">
 
 
@@ -12,8 +12,8 @@
         android:id="@+id/listViewUser"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:divider="@android:color/black"
-        android:dividerHeight="1dp"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="@dimen/cardview_default_radius"
         android:footerDividersEnabled="true"
         android:headerDividersEnabled="true"
         android:scrollbars="horizontal|vertical" />

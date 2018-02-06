@@ -5,11 +5,20 @@
     android:id="@+id/relativeProductosID"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/blue2"
     tools:context="com.josevicente.firebaseproject.ListAllItems.ProductosActivity">
+
+    <Spinner
+        android:id="@+id/spItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:entries="@id/spinnerItems" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerProductoID"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/spItem"
         android:scrollbars="vertical" />
 </RelativeLayout>
